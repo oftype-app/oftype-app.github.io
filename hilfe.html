@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Hilfe – OfType</title>
+  <meta name="description" content="Hilfe zu OfType: Einrichtung, Kopplung, LED am Dongle, Tippgeschwindigkeit, Tabellen und Formulare, Touchpad und Kürzel, Präsentation, Zeigen per Bewegung und Fehlerbehebung.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#061027" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/icon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/doc.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="OfType – Startseite">
+        <img src="assets/icon-64.png" width="32" height="32" alt="">
+        <span>OfType</span>
+      </a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="index.html#funktionen">Funktionen</a></li>
+          <li><a href="index.html#so-gehts">So geht’s</a></li>
+          <li><a href="hilfe.html" aria-current="page">Hilfe</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <div class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Hilfe und Support</p>
+        <h1>Hilfe zu OfType</h1>
+        <p class="lead">Einrichtung, Kopplung, Bedienung und Lösungen für häufige Fragen – vom ersten Einstecken bis zur Präsentation.</p>
+        <p class="page-meta">Stand: 19.10.2026 · OfType 1.0</p>
+      </div>
+    </div>
+
+    <div class="wrap doc">
+      <nav class="toc" aria-labelledby="toc-titel">
+        <h2 id="toc-titel">Inhalt</h2>
+        <ol>
+          <li><a href="#einrichtung">Einrichtung</a></li>
+          <li><a href="#erstkopplung">Erstkopplung</a></li>
+          <li><a href="#neues-geraet">Neues Gerät koppeln</a></li>
+          <li><a href="#werkszustand">Werkszustand</a></li>
+          <li><a href="#led">LED und Taste am Dongle</a></li>
+          <li><a href="#umbenennen">Dongle umbenennen</a></li>
+          <li><a href="#tippen">Tippgeschwindigkeit und Pause</a></li>
+          <li><a href="#tabellen">Tabellen und Formulare</a></li>
+          <li><a href="#touchpad">Touchpad</a></li>
+          <li><a href="#praesentation">Präsentation</a></li>
+          <li><a href="#zeigen">Zeigen per Bewegung</a></li>
+          <li><a href="#autokorrektur">Automatische Korrektur</a></li>
+          <li><a href="#remote">Entfernte Sitzungen</a></li>
+          <li><a href="#fehlerbehebung">Fehlerbehebung</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ol>
+      </nav>
+
+      <div class="prose prose--numbered">
+        <section id="einrichtung" aria-labelledby="einrichtung-titel">
+          <h2 id="einrichtung-titel">Einrichtung</h2>
+          <p>OfType besteht aus zwei Teilen: der App auf dem Gerät und dem OfType-Dongle, einem kleinen USB-Stick am PC. Die App sendet per Bluetooth an den Dongle; der Dongle meldet sich am PC als Tastatur und Maus. Auf dem PC wird nichts installiert. <!-- SPAETER: BEZUG -->Der OfType-Dongle ist in Vorbereitung.</p>
+          <ol>
+            <li><!-- SPAETER: APP-STORE-LINK -->OfType aus dem App Store laden (die App erscheint in Kürze).</li>
+            <li>Den Dongle in einen freien USB-A-Anschluss stecken, am besten direkt am PC und nicht an einem Verteiler. Computer nur mit USB-C brauchen dafür einen einfachen Adapter von USB-C auf USB-A. Die LED blinkt kurz und langsam blau.</li>
+            <li>Bluetooth am Gerät einschalten. Beim ersten Start fragt das System, ob OfType Bluetooth verwenden darf; ohne diese Erlaubnis findet die App den Dongle nicht.</li>
+            <li>Den Dongle einmal koppeln (nächster Abschnitt).</li>
+          </ol>
+          <div class="note">
+            <span class="note__title">Ohne Dongle ausprobieren</span>
+            <p>Unter <span class="path">Einstellungen › Demo-Modus</span> verhält sich die App, als wäre ein Dongle verbunden. Was am PC getippt würde, zeigt <span class="path">Demo-Ausgabe</span>. Im Demo-Modus wird nichts gesendet.</p>
+          </div>
+        </section>
+
+        <section id="erstkopplung" aria-labelledby="erstkopplung-titel">
+          <h2 id="erstkopplung-titel">Erstkopplung</h2>
+          <p>Ein Dongle gehört immer zu genau einem Gerät. Neue Kopplungen nimmt er nur im Koppelmodus an.</p>
+          <ol>
+            <li>Die Taste am Dongle <strong>3 Sekunden</strong> gedrückt halten, bis die LED <strong>schnell blau</strong> blinkt. Der Koppelmodus dauert 2 Minuten.</li>
+            <li>In OfType „Dongle verbinden“ öffnen: oben links den Verbindungsstatus antippen oder <span class="path">Einstellungen › Dongle verbinden …</span> wählen.</li>
+            <li>Den Dongle in der Liste wählen. Er trägt den Hinweis „Koppelbereit“.</li>
+            <li>Die Anfrage des Systems mit „Koppeln“ bestätigen. Die LED blinkt 3× grün und leuchtet danach grün: verbunden.</li>
+          </ol>
+          <p>Ab jetzt merkt sich OfType den Dongle und verbindet sich beim Start automatisch mit ihm. Nach einem Verbindungsabbruch versucht die App es von selbst erneut.</p>
+        </section>
+
+        <section id="neues-geraet" aria-labelledby="neues-geraet-titel">
+          <h2 id="neues-geraet-titel">Neues Gerät koppeln</h2>
+          <p>Soll ein anderes Gerät den Dongle nutzen, wird es genauso gekoppelt: Taste 3 Sekunden halten, bis die LED schnell blau blinkt, dann am neuen Gerät in OfType verbinden und koppeln.</p>
+          <p>Mit der neuen Kopplung löscht der Dongle die alte. Das bisherige Gerät kommt danach nicht mehr herein. Läuft der Koppelmodus ohne neue Kopplung ab, bleibt alles wie vorher.</p>
+          <p>Soll das bisherige Gerät später wieder verwendet werden: dort in den Bluetooth-Einstellungen beim Dongle ⓘ antippen, „Dieses Gerät ignorieren“ wählen und danach wie oben neu koppeln.</p>
+        </section>
+
+        <section id="werkszustand" aria-labelledby="werkszustand-titel">
+          <h2 id="werkszustand-titel">Werkszustand</h2>
+          <p>Die Taste am Dongle <strong>10 Sekunden</strong> gedrückt halten. Die LED blinkt <strong>3× rot</strong>: Alle Kopplungen sind gelöscht, und der Name ist wieder „OfType Dongle“.</p>
+          <p>Danach am Gerät in den Bluetooth-Einstellungen beim Dongle „Dieses Gerät ignorieren“ wählen und wie unter <a href="#erstkopplung">Erstkopplung</a> neu koppeln: Taste 3 Sekunden halten, bis die LED schnell blau blinkt. Ohne das Ignorieren kennt das System noch die alte Kopplung, und das Verbinden scheitert.</p>
+        </section>
+
+        <section id="led" aria-labelledby="led-titel">
+          <h2 id="led-titel">LED und Taste am Dongle</h2>
+          <table class="table">
+            <caption>Was die LED zeigt</caption>
+            <thead>
+              <tr><th scope="col">LED</th><th scope="col">Bedeutung</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--blink" aria-hidden="true"></span>blau, langsam (kurz alle 1,5 s)</span></th><td>Bereit, wartet auf das gekoppelte Gerät.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--blink-fast" aria-hidden="true"></span>blau, schnell</span></th><td>Koppelmodus (2 Minuten).</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--green" aria-hidden="true"></span>grün</span></th><td>Verbunden.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--green led--blink-fast" aria-hidden="true"></span>grün, flackernd</span></th><td>Der Dongle tippt gerade.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--green" aria-hidden="true"></span>3× grün</span></th><td>Kopplung gespeichert.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--red" aria-hidden="true"></span>kurz rot</span></th><td>Etwas wurde abgewiesen, zum Beispiel ein fremdes Gerät oder eine Kopplung außerhalb des Koppelmodus.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--red" aria-hidden="true"></span>3× rot</span></th><td>Werkszustand hergestellt.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--red" aria-hidden="true"></span>dauerhaft rot</span></th><td>Startfehler. Den Dongle abziehen und wieder einstecken; bleibt die LED rot, hilft der <a href="#kontakt">Kontakt</a>.</td></tr>
+              <tr><th scope="row"><span class="led-cell"><span class="led led--green" aria-hidden="true"></span>grün, und am PC erscheint ein Laufwerk</span></th><td>Wartungsmodus: Die Taste war beim Einstecken gedrückt. Den Dongle abziehen und ohne gedrückte Taste wieder einstecken.</td></tr>
+            </tbody>
+          </table>
+          <table class="table">
+            <caption>Was die Taste bewirkt</caption>
+            <thead>
+              <tr><th scope="col">Taste</th><th scope="col">Wirkung</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">kurz drücken</th><td>keine</td></tr>
+              <tr><th scope="row">3 Sekunden halten</th><td>Koppelmodus für 2 Minuten</td></tr>
+              <tr><th scope="row">10 Sekunden halten</th><td>Werkszustand: alle Kopplungen gelöscht, Name zurückgesetzt</td></tr>
+              <tr><th scope="row">beim Einstecken gedrückt</th><td>Wartungsmodus, im Alltag nicht nötig: abziehen und ohne gedrückte Taste wieder einstecken</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="umbenennen" aria-labelledby="umbenennen-titel">
+          <h2 id="umbenennen-titel">Dongle umbenennen</h2>
+          <p>Bei mehreren Dongles hilft ein eigener Name, etwa „Empfang“ oder „Besprechungsraum 2“. Bei verbundenem Dongle unter <span class="path">Einstellungen › Dongle › Name</span> antippen, den neuen Namen eingeben und sichern.</p>
+          <ul>
+            <li>Erlaubt sind bis zu 29 Byte: Einfache Buchstaben und Ziffern zählen einfach, Umlaute doppelt. Die App zeigt an, wenn ein Name zu lang ist.</li>
+            <li>Der Name wird auf dem Dongle gespeichert und bleibt auch nach dem Abziehen und Wiedereinstecken erhalten. Der Werkszustand setzt ihn auf „OfType Dongle“ zurück.</li>
+            <li>Andere Geräte und die Bluetooth-Liste zeigen den neuen Namen erst nach dem nächsten Trennen.</li>
+          </ul>
+        </section>
+
+        <section id="tippen" aria-labelledby="tippen-titel">
+          <h2 id="tippen-titel">Tippgeschwindigkeit und Pause nach Zeilenumbruch</h2>
+          <h3>Tippgeschwindigkeit</h3>
+          <p>Unter <span class="path">Einstellungen › Tippen › Tippgeschwindigkeit</span> lassen sich 5 bis 250 Zeichen pro Sekunde einstellen. Kommen in einem Programm Zeichen doppelt, vertauscht oder gar nicht an – etwa in Web-Formularen oder entfernten Sitzungen –, hilft eine niedrigere Geschwindigkeit.</p>
+          <h3>Pause nach Zeilenumbruch</h3>
+          <p>Manche Programme brauchen nach der Eingabetaste einen Moment, etwa wenn sich eine neue Zeile, ein neues Feld oder ein Dialog öffnet. Unter <span class="path">Einstellungen › Tippen › Pause nach Zeilenumbruch</span> stehen Aus, 0,05 s, 0,1 s, 0,2 s und 0,5 s zur Wahl (Standard: Aus).</p>
+          <h3>Anführungszeichen und Striche</h3>
+          <p>Ist <span class="path">Anführungszeichen und Striche vereinfachen</span> an, werden schräge Anführungszeichen wie „ “ und lange Striche wie – als " und - getippt. So kommen sie auf jedem PC richtig an.</p>
+        </section>
+
+        <section id="tabellen" aria-labelledby="tabellen-titel">
+          <h2 id="tabellen-titel">Tabellen und Formulare</h2>
+          <p>Ein Tabulator im Text wird am PC als <kbd>Tab</kbd>-Taste getippt, ein Zeilenumbruch als <kbd>Enter</kbd>. <kbd>Tab</kbd> springt in Formularen ins nächste Feld und in Tabellen in die nächste Zelle; <kbd>Enter</kbd> wechselt in Tabellen in die nächste Zeile, schickt in vielen Formularen aber das ganze Formular ab.</p>
+          <p>Tabulatoren kommen mit „Tab einfügen“ in den Text: Die Taste über dem Schreibfeld – beim Vorschreiben und beim Anlegen oder Bearbeiten eines Bausteins – setzt einen Tabulator an die Cursorposition (bei älteren Systemversionen ans Ende des Textes). Gesendet wird dabei noch nichts. In der Liste der Bausteine erscheint ein Tabulator als ⇥.</p>
+          <p>So füllt ein einziger Baustein mehrere Felder nacheinander:</p>
+          <p class="tab-demo"><span class="visually-hidden">Beispiel:</span><span>Name</span><kbd>Tab</kbd><span>Abteilung</span><kbd>Tab</kbd><span>Durchwahl</span></p>
+          <ul>
+            <li>Vor dem Einfügen den Cursor am PC ins erste Feld bzw. in die erste Zelle setzen.</li>
+            <li>Soll ein Formular nicht vorzeitig abgeschickt werden, endet der Baustein ohne Zeilenumbruch. In Tabellen führt ein Zeilenumbruch am Ende des Bausteins in die nächste Zeile.</li>
+            <li>Einzelne <kbd>Tab</kbd>- und <kbd>Enter</kbd>-Anschläge schickt die <a href="#kuerzel">Kürzel-Leiste</a> im Touchpad sofort an den PC.</li>
+            <li>Öffnet ein Programm nach <kbd>Enter</kbd> erst eine neue Zeile oder Seite, hilft die <a href="#tippen">Pause nach Zeilenumbruch</a>.</li>
+          </ul>
+        </section>
+
+        <section id="touchpad" aria-labelledby="touchpad-titel">
+          <h2 id="touchpad-titel">Touchpad</h2>
+          <p>Im Tab „Steuerung“ unter „Touchpad“ wird die große Fläche zum Touchpad.</p>
+          <table class="table">
+            <caption>Gesten</caption>
+            <thead>
+              <tr><th scope="col">Geste</th><th scope="col">Wirkung am PC</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Mit einem Finger bewegen</th><td>Zeiger bewegen</td></tr>
+              <tr><th scope="row">Antippen</th><td>Linksklick</td></tr>
+              <tr><th scope="row">Mit zwei Fingern antippen</th><td>Rechtsklick</td></tr>
+              <tr><th scope="row">Mit zwei Fingern wischen</th><td>Scrollen</td></tr>
+              <tr><th scope="row">Kurz halten, dann ziehen</th><td>Ziehen mit gedrückter linker Taste, zum Beispiel zum Markieren oder Verschieben</td></tr>
+            </tbody>
+          </table>
+          <p>Unter der Fläche liegen die Tasten „Links“ und „Rechts“: Berühren drückt die Taste, Loslassen lässt sie los. Das Zeigertempo (0,5- bis 3-fach) steht unter <span class="path">Einstellungen › Maus › Zeigertempo</span>. Ohne Verbindung sind Fläche, Tasten und Kürzel gesperrt.</p>
+          <h3 id="kuerzel">Kürzel-Leiste</h3>
+          <p>Unter „Links“ und „Rechts“ liegt eine Reihe mit Kürzeln, die sich seitlich verschieben lässt. Jede Taste wirkt sofort am PC, dort wo der Cursor steht. Die ersten fünf sind Kürzel mit der Steuerungstaste (<kbd>Strg</kbd>).</p>
+          <table class="table">
+            <caption>Tasten der Kürzel-Leiste</caption>
+            <thead>
+              <tr><th scope="col">Taste in der App</th><th scope="col">Wirkung am PC</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Widerrufen <kbd>Strg+Z</kbd></th><td>letzten Schritt rückgängig machen</td></tr>
+              <tr><th scope="row">Ausschneiden <kbd>Strg+X</kbd></th><td>Markiertes ausschneiden</td></tr>
+              <tr><th scope="row">Kopieren <kbd>Strg+C</kbd></th><td>Markiertes kopieren</td></tr>
+              <tr><th scope="row">Einsetzen <kbd>Strg+V</kbd></th><td>einsetzen, was am PC kopiert wurde</td></tr>
+              <tr><th scope="row">Alles <kbd>Strg+A</kbd></th><td>alles markieren</td></tr>
+              <tr><th scope="row"><kbd>Tab</kbd></th><td>ins nächste Feld oder in die nächste Zelle</td></tr>
+              <tr><th scope="row"><kbd>Enter</kbd></th><td>bestätigen oder neue Zeile</td></tr>
+              <tr><th scope="row"><kbd>Esc</kbd></th><td>abbrechen, etwa einen Dialog schließen</td></tr>
+              <tr><th scope="row"><kbd>Entf</kbd></th><td>Zeichen rechts vom Cursor oder Markiertes löschen</td></tr>
+            </tbody>
+          </table>
+          <p>„Einsetzen“ setzt die Zwischenablage des PCs ein, nicht die des Geräts. Text vom Gerät kommt über „Live tippen“, „Vorschreiben“ oder Bausteine an den PC.</p>
+        </section>
+
+        <section id="praesentation" aria-labelledby="praesentation-titel">
+          <h2 id="praesentation-titel">Präsentation</h2>
+          <p>Im Tab „Steuerung“ unter „Präsentation“ liegt die Fernbedienung. Die Präsentation am PC muss im Vordergrund sein, damit die Tasten dort ankommen.</p>
+          <table class="table">
+            <caption>Tasten und ihre Wirkung in gängigen Präsentationsprogrammen</caption>
+            <thead>
+              <tr><th scope="col">Taste in der App</th><th scope="col">Wirkung</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Weiter <kbd>Bild ab</kbd></th><td>nächste Folie oder Animation</td></tr>
+              <tr><th scope="row">Zurück <kbd>Bild auf</kbd></th><td>vorige Folie oder Animation</td></tr>
+              <tr><th scope="row">Von Anfang <kbd>F5</kbd></th><td>Vollbild ab der ersten Folie</td></tr>
+              <tr><th scope="row">Ab hier <kbd>Umschalt+F5</kbd></th><td>Vollbild ab der aktuellen Folie</td></tr>
+              <tr><th scope="row">Beenden <kbd>Esc</kbd></th><td>Vollbild verlassen</td></tr>
+              <tr><th scope="row">Schwarzbild <kbd>b</kbd></th><td>Bildschirm im Vollbild schwarz schalten; erneutes Drücken zeigt die Folie wieder</td></tr>
+              <tr><th scope="row">Laserpointer <kbd>Strg+L</kbd></th><td>Laserpointer ein oder aus – nur in Programmen, die diese Tastenkombination kennen</td></tr>
+            </tbody>
+          </table>
+          <ul>
+            <li><strong>Zeitanzeige:</strong> startet mit „Von Anfang“ oder „Ab hier“ (läuft sie schon, zählt sie weiter), „Beenden“ hält sie an. Antippen hält sie an oder lässt sie weiterlaufen, „Zurücksetzen“ stellt sie auf null. Die Zeit läuft auch beim Wechsel zum Touchpad oder in einen anderen Tab weiter.</li>
+            <li><strong>Bildschirm:</strong> Solange die Präsentation in der App offen ist, bleibt der Bildschirm des Geräts an.</li>
+            <li>Programme unterscheiden sich bei einzelnen Tasten. Weiter, Zurück und Beenden nutzen die üblichen Tasten <kbd>Bild ab</kbd>, <kbd>Bild auf</kbd> und <kbd>Esc</kbd>.</li>
+          </ul>
+        </section>
+
+        <section id="zeigen" aria-labelledby="zeigen-titel">
+          <h2 id="zeigen-titel">Zeigen per Bewegung</h2>
+          <p>Im Bereich „Präsentation“ die Taste „Zeigen“ gedrückt halten und das Gerät sanft schwenken: Drehen nach links und rechts bewegt den Zeiger waagerecht, Kippen nach vorn und hinten senkrecht. Beim Loslassen bleibt der Zeiger stehen.</p>
+          <ul>
+            <li>Die Empfindlichkeit (0,5- bis 3-fach) steht unter <span class="path">Einstellungen › Maus › Empfindlichkeit beim Zeigen</span>.</li>
+            <li>Zusammen mit „Laserpointer“ wird der Zeiger in Programmen, die den Laserpointer per <kbd>Strg+L</kbd> einschalten, zum Leuchtpunkt auf der Folie.</li>
+            <li>Geräte ohne Bewegungssensor zeigen den Hinweis „Zeigen per Bewegung ist auf diesem Gerät nicht verfügbar.“ Das Touchpad funktioniert dort trotzdem.</li>
+            <li>Bewegungsdaten werden nur gelesen, solange „Zeigen“ gehalten wird, und nicht gespeichert.</li>
+          </ul>
+        </section>
+
+        <section id="autokorrektur" aria-labelledby="autokorrektur-titel">
+          <h2 id="autokorrektur-titel">Automatische Korrektur beim Live tippen</h2>
+          <p>Textverarbeitungen, E-Mail- und Tabellenprogramme ändern Getipptes manchmal selbst: Aus zwei Bindestrichen wird ein Gedankenstrich, der Satzanfang wird großgeschrieben, aus „1. “ wird eine nummerierte Liste, oder eine Spalte wird automatisch vervollständigt.</p>
+          <p>„Live tippen“ korrigiert Tippfehler am PC mit gezählten Rücktasten und geht davon aus, dass dort genau das steht, was getippt wurde, und der Cursor am Textende bleibt. Ersetzt das Programm Zeichen, löschen spätere Korrekturen zu viel oder zu wenig.</p>
+          <ul>
+            <li>Für längere Texte ist „Vorschreiben“ robuster: Der fertige Text wird nur eingefügt, nichts wird nachträglich korrigiert. Dasselbe gilt für Bausteine.</li>
+            <li>Alternativ lässt sich die automatische Korrektur im jeweiligen Programm für die Dauer der Arbeit abschalten.</li>
+          </ul>
+        </section>
+
+        <section id="remote" aria-labelledby="remote-titel">
+          <h2 id="remote-titel">Entfernte Sitzungen und virtuelle Arbeitsplätze</h2>
+          <p>In einer entfernten Sitzung oder einem virtuellen Arbeitsplatz tippt der Dongle wie eine Tastatur am eigenen PC. Maßgeblich ist dann die Tastaturbelegung <strong>der entfernten Sitzung</strong>: Auch diese muss Deutsch (Deutschland) bzw. Englisch (USA) passend zum Dongle sein, sonst kommen einzelne Zeichen falsch an.</p>
+          <p>Gehen in der Sitzung Zeichen verloren, hilft eine niedrigere <a href="#tippen">Tippgeschwindigkeit</a>.</p>
+        </section>
+
+        <section id="fehlerbehebung" aria-labelledby="fehlerbehebung-titel">
+          <h2 id="fehlerbehebung-titel">Fehlerbehebung</h2>
+          <div class="faq">
+            <details>
+              <summary>Der Dongle erscheint nicht in der Liste?</summary>
+              <div class="faq__body">
+                <ul>
+                  <li>Ist Bluetooth am Gerät eingeschaltet und darf OfType Bluetooth verwenden? Die Erlaubnis lässt sich in den Einstellungen des Geräts bei OfType oder unter Datenschutz &amp; Sicherheit › Bluetooth ändern.</li>
+                  <li>Steckt der Dongle am PC, und blinkt die LED blau? Ohne Licht bekommt er keinen Strom: an einem anderen Anschluss versuchen.</li>
+                  <li>Für eine neue Kopplung muss die LED schnell blau blinken (Taste 3 Sekunden halten).</li>
+                  <li>Die Liste zeigt nur OfType-Dongles, keine anderen Bluetooth-Geräte.</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Das Verbinden scheitert oder bricht ab?</summary>
+              <div class="faq__body">
+                <ul>
+                  <li>Meldet die App „nicht mit diesem Gerät gekoppelt“: Taste am Dongle 3 Sekunden halten, bis die LED schnell blau blinkt, und erneut verbinden.</li>
+                  <li>Klappt die Kopplung weiter nicht: in den Bluetooth-Einstellungen des Geräts beim Dongle ⓘ antippen, „Dieses Gerät ignorieren“ wählen und neu koppeln.</li>
+                  <li>Bricht die Verbindung ab, zeigt die App „Verbindung verloren“ und verbindet sich von selbst neu, sobald der Dongle wieder erreichbar ist. Wände, Metall und große Entfernungen schwächen die Verbindung.</li>
+                  <li><span class="path">Einstellungen › Dongle › Verbindung prüfen</span> misst die Antwortzeit: bis 100 ms „sehr gut“, bis 250 ms „in Ordnung“, darüber „langsam“.</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Am PC kommt nichts an?</summary>
+              <div class="faq__body">
+                <ul>
+                  <li>Steht der Cursor am PC in einem Feld, das Text annimmt, und ist das richtige Fenster im Vordergrund?</li>
+                  <li>Zeigt die App „Verbunden“, und leuchtet die LED grün?</li>
+                  <li>Schläft der PC, tippt der Dongle erst nach dem Aufwachen, womöglich auf dem Sperrbildschirm. Den PC deshalb vorher wecken.</li>
+                  <li>Manche verwalteten Firmen-PCs lassen nur freigegebene USB-Geräte zu. Dann entscheidet die zuständige IT-Abteilung.</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Der Dongle steckt an einem USB-Verteiler oder einer Dockingstation?</summary>
+              <div class="faq__body">
+                <p>An manchen Verteilern und Dockingstationen meldet sich der Dongle nach einem Neustart des PCs nicht von selbst wieder an. Abhilfe: den Dongle direkt am PC einstecken, an Computern nur mit USB-C über einen einfachen Adapter, oder einmal abziehen und wieder einstecken.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Umlaute fehlen, Y und Z sind vertauscht oder Sonderzeichen stimmen nicht?</summary>
+              <div class="faq__body">
+                <ul>
+                  <li>Die Belegung des Dongles (Deutsch oder US) muss zur eingestellten Tastaturbelegung am PC passen – in entfernten Sitzungen zur Belegung der Sitzung. Andere Belegungen, etwa die Schweizer, werden nicht unterstützt.</li>
+                  <li>Mit deutscher Belegung tippt der Dongle die Zeichen einer deutschen Tastatur, auch Umlaute, ß, €, @ und Akzente. Mit US-Belegung nur Zeichen ohne Umlaute und Akzente.</li>
+                  <li>Die deutsche Belegung des Dongles entspricht der üblichen PC-Tastatur. Bei Computern, deren deutsche Belegung davon abweicht, kommen einzelne Sonderzeichen wie @, { } oder \ falsch an.</li>
+                  <li>Zeichen ohne Taste, etwa Emojis, lassen sich nicht tippen. Die App meldet das, statt etwas Falsches zu tippen.</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Zeichen fehlen oder kommen doppelt?</summary>
+              <div class="faq__body">
+                <p>Manche Programme kommen bei hoher Geschwindigkeit nicht mit. Die <a href="#tippen">Tippgeschwindigkeit</a> senken und bei Bedarf die Pause nach Zeilenumbruch einschalten. Beim Live tippen kann auch die <a href="#autokorrektur">automatische Korrektur</a> des Programms die Ursache sein.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Der Zeiger ist zu schnell oder zu langsam?</summary>
+              <div class="faq__body">
+                <p>Für das Touchpad gilt <span class="path">Einstellungen › Maus › Zeigertempo</span>, für das Zeigen per Bewegung <span class="path">Empfindlichkeit beim Zeigen</span>. Zusätzlich wirkt die Zeigergeschwindigkeit, die am PC eingestellt ist.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section id="kontakt" aria-labelledby="kontakt-titel">
+          <h2 id="kontakt-titel">Kontakt</h2>
+          <p>Fragen, Fehler und Wünsche an: <a href="mailto:oftype.app@icloud.com">oftype.app@icloud.com</a></p>
+          <p>Hilfreich sind eine kurze Beschreibung, die angezeigte Meldung, die Version der App (<span class="path">Einstellungen › Info</span>) und die Tastaturbelegung am PC.</p>
+          <div class="note">
+            <span class="note__title">Vertrauliches weglassen</span>
+            <p>In Nachrichten und Bildschirmfotos keine vertraulichen Texte oder personenbezogenen Daten mitschicken.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="assets/icon-64.png" width="32" height="32" alt="">
+            <span>OfType</span>
+          </a>
+          <p>Tastatur, Maus und Präsentations-Fernbedienung für den PC.</p>
+        </div>
+        <nav aria-label="Rechtliches und Hilfe">
+          <ul>
+            <li><a href="hilfe.html" aria-current="page">Hilfe</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__legal">
+        <p>© 2026 Leonard Biron</p>
+        <p>Apple, iPhone, iPad, iPadOS, Mac, App Store und TestFlight sind Marken der Apple Inc., eingetragen in den USA und anderen Ländern. iOS ist eine Marke oder eingetragene Marke von Cisco in den USA und anderen Ländern und wird unter Lizenz verwendet. Die Wortmarke Bluetooth gehört der Bluetooth SIG, Inc. Weitere Marken gehören ihren Inhabern. OfType steht in keiner Verbindung zu diesen Unternehmen.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
